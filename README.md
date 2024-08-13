@@ -1,3 +1,10 @@
+# Running This Project Locally With Docker
+1. If Docker is not yet installed, you can follow the installation here to have Docker on your local machine: https://www.docker.com/
+2. Run Docker locally
+3. Run `docker-compose build` to build the Docker image
+4. Run `docker-compose up` to run the Docker container which will trigger `npm run start` to start the application in development mode
+5. You can then visit the application at http://localhost:3000
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
