@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import LinearProgress from '@mui/material/LinearProgress';
+import './ProgressLoader.css';
 
 const ProgressLoader = () => {
   const [progress, setProgress] = useState(0);
@@ -21,8 +22,8 @@ const ProgressLoader = () => {
 
   return (
     <div>
-      <Button className='startCountButton' variant="outlined" onClick={handleStartCount}>Start Count</Button>
-      <LinearProgress variant="determinate" value={progress} />
+      <Button variant="outlined" onClick={handleStartCount}>Start Count</Button>
+      <LinearProgress className='loaderBar' variant="determinate" value={progress} />
     </div>
   );
 };

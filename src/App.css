@@ -3,4 +3,13 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
+  .progressLoaderContainer,
+  .multiProgressLoaderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 200px;
+  }
 }
